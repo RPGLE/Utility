@@ -32,7 +32,7 @@ ctl-opt option(*srcstmt: *nodebugio) datfmt(*iso) nomain;
 // Returns    : systemName => The retrieved char.
 // Parameter/s: N/A
 //--------------------------------------------------------------------------------------------------
-dcl-proc Utility_getSystemName;
+dcl-proc Utility_getSystemName export;
   dcl-pi *n char(8) end-pi;
 
   dcl-pr QWCRNETA extpgm('QWCRNETA');
