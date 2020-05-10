@@ -29,7 +29,7 @@ ctl-opt option(*srcstmt: *nodebugio) datfmt(*iso) nomain;
 //--------------------------------------------------------------------------------------------------
 // Procedure  : Utility_getSystemName
 // Purpose    : Use ibm retrieval to get the name of the system.
-// Returns    : systemName => The retrieved char.
+// Returns    : systemName => The retrieved system name.
 // Parameter/s: N/A
 //--------------------------------------------------------------------------------------------------
 dcl-proc Utility_getSystemName export;
@@ -48,8 +48,8 @@ dcl-proc Utility_getSystemName export;
 
   // Receiver variable for QWCRNETA
   dcl-ds apiData;
-   filler char(32);
-   returnSystem char(8);
+   filler char(32) inz;
+   returnSystem char(8) inz;
   end-ds;
 
   dcl-c SYSTEM_NAME const('SYSNAME');
@@ -58,7 +58,7 @@ dcl-proc Utility_getSystemName export;
          : %size(apiData)
          : 1
          : SYSTEM_NAME
-         : apiError );
+         : apiError);
 
   return returnSystem;
 end-proc;     
