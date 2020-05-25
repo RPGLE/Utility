@@ -13,5 +13,6 @@ After downloading all of the programs, you must create the objects in the correc
 <ol>
   <li>Create module command</li>
   <li>CRTSRVPGM SRVPGM(LIBRARYHERE/UTILITY) MODULE(*SRVPGM) SRCFILE(LIBRARY/QSRVSRC)</li>
-  <li>Binding Directory</li>
+  <li>Create the Binding Directory - CRTBNDDIR BNDDIR(LIBRARYHERE/UTILITY) TEXT('Utility Service Program Binding Directory')</li>
+  <li>Add the Service Program to the Binding Directory - WRKBNDDIRE BNDDIR(UTILITY). After the screen is displayed type a 1, then "UTILITY" followed by *SRVPGM and press enter. This should successfully add a record with "*IMMED" activation.</li>
 </ol>
