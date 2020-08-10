@@ -37,3 +37,12 @@
 //--------------------------------------------------------------------------------------------------
 dcl-pr Utility_getSystemName char(8) end-pr;
 
+//--------------------------------------------------------------------------------------------------
+// Procedure  : Utility_getLastSpooledFileCreated
+// Purpose    : Retrieves the job name, number, user and the spooled file name for the most recent
+//              spooled file created within this job.
+// Returns    : spooledFileDetails => Contains all response values of the job details.
+// Parameter/s: N/A
+//--------------------------------------------------------------------------------------------------
+dcl-pr Utility_getLastSpooledFileCreated likeDS(dt_spooledFileDetails);
+end-pr; 
