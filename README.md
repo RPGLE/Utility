@@ -6,6 +6,7 @@ All procedures will be prefixed with 'Utility_'.
 # Procedures
 <ul>
   <li>Utility_getSystemName - Retrieve the system name using a simple interface.</li>
+  <li>Utility_getLastSpooledFileCreated - Retrieve the job name, number, user and the spooled file name for the most recent spooled file created within this job.</li>  
 </ul>
 
 # Preparation
