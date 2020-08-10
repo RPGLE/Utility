@@ -64,13 +64,13 @@ dcl-proc Utility_getSystemName export;
 end-proc;     
 
 //--------------------------------------------------------------------------------------------------
-// Procedure  : Common_getLastSpooledFileCreated
+// Procedure  : Utility_getLastSpooledFileCreated
 // Purpose    : Retrieves the job name, number, user and the spooled file name for the most recent
 //              spooled file created within this job.
 // Returns    : spooledFileDetails => Contains all response values of the job details.
 // Parameter/s: N/A
 //--------------------------------------------------------------------------------------------------
-dcl-proc Common_getLastSpooledFileCreated export;
+dcl-proc Utility_getLastSpooledFileCreated export;
   dcl-pi *n likeDS(dt_spooledFileDetails);
   end-pi;
 
